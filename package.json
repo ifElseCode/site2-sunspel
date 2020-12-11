@@ -1,0 +1,20 @@
+{
+  "name": "site2-sunspel",
+  "version": "0.0.1",
+  "description": "An if-else coding project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifElse-Code/site2-sunspel.git"
+  },
+  "keywords": [],
+  "author": "ifElse-Code",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/ifElse-Code/site2-sunspel/issues"
+  },
+  "homepage": "https://github.com/ifElse-Code/site2-sunspel#readme"
+}
