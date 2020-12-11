@@ -1,0 +1,29 @@
+<% layout('layouts/user-layout')%>
+<div>
+  <h2>Log in or sign up</h2>
+  <h3>Registered Customers</h3>
+  <p>If you have an account, dign in with your email address.</p>
+  <form action="" method="post">
+    <div>
+      <label for="email">EMAIL ADDRESS</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <input type="checkbox" id="remember" checked name="remember" value="yes">
+      <label for="remember">REMEMBER ME</label>
+    </div>
+    <input type="submit" value="SIGN IN" name="userLogIn">
+    <a href="">Forgotten Your Password?</a>
+  </form>
+</div>
+<div>
+  <h2>New Customers</h2>
+  <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
+  <form method="get" action="signUp.html">
+    <button type="submit">CREATE AN ACCOUNT</button>
+  </form>
+</div>

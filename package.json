@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "An if-else coding project.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/ifElse-Code/site2-sunspel/issues"
   },
-  "homepage": "https://github.com/ifElse-Code/site2-sunspel#readme"
+  "homepage": "https://github.com/ifElse-Code/site2-sunspel#readme",
+  "dependencies": {
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
 }
