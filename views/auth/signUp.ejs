@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<% layout('layouts/user-layout')%>
+  <% layout('layouts/user-layout')%>
+<body>
+  <header></header>
+  <main>
+    <h1>REGISTER:</h1>
+    <p class="userChoice">Register a new account or <a href="logIn.html">sign in.</a></p>
+    <form action="" method="POST">
+      <fieldset name="userInfo" class="userInfo">
+        <div>
+          <label for="prefix" class="input_label">PREFIX</label>
+          <select name="prefix" id="prefix">
+            <option value="default" default> &#10003;</option>
+            <option value="mr">Mr</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+            <option value="miss">Miss</option>
+          </select>
+        </div>
+        <div>
+          <label for="firstName" class="input_label">FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName" class="textInput" required>
+        </div>
+        <div>
+          <label for="lastName" class="input_label">LAST NAME</label>
+          <input type="text" id="lastName" name="lastName" class="textInput" required>
+        </div>
+        <div>
+          <input type="checkbox" id="remember" checked name="remember" value="yes">
+          <label for="remember">Sign up for our newsletter</label>
+        </div>
+        <div>
+          <label for="dateob">DATE OF BIRTH</label>
+          <input type="date" id="dateob" name="dob">
+        </div>
 
-<h1>REGISTER</h1>
-<p>Register a new account or <a href="logIn.html">sign in</a></p>
-<form action="" method="POST">
-  <fieldset name="userInfo">
-    <div>
-      <label for="prefix">PREFIX</label>
-      <select name="prefix" id="prefix">
-        <option value="default" default> &#10003;</option>
-        <option value="mr">Mr</option>
-        <option value="ms">Ms</option>
-        <option value="mrs">Mrs</option>
-        <option value="miss">Miss</option>
-      </select>
-    </div>
-    <div>
-      <label for="firstName">FIRST NAME</label>
-      <input type="text" id="firstName" name="firstName" required>
-    </div>
-    <div>
-      <label for="lastName">LAST NAME</label>
-      <input type="text" id="lastName" name="lastName" required>
-    </div>
-    <div>
-      <input type="checkbox" id="newsletter" checked name="newsletter" value="yes">
-      <label for="newsletter">SIGN UP FOR NEWSLETTER</label>
-    </div>
-    <div>
-      <label for="dateob">DATE OF BIRTH</label>
-      <input type="date" id="dateob" name="dob">
-    </div>
-    <div>
-      <p>INTERESTED IN</p>
-      <input type="radio" id="mens" name="gender" value="mens">
-      <label for="mens">Men's</label>
-      <input type="radio" id="womens" name="gender" value="womens">
-      <label for="mens">Women's</label>
-    </div>
-  </fieldset>
-  <fieldset name="userLogIn">
-    <h2>SIGN-IN INFORMATION</h2>
-    <div>
-      <label for="email">EMAIL ADDRESS</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="password">PASSWORD</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-      <label for="confPassword">CONFIRM PASSWORD</label>
-      <input type="password" id="confPass
-      word" name="confPassword" required>
-    </div>
-    <div>
-      <input type="checkbox" id="remember" checked name="remember" value="yes">
-      <label for="remember">REMEMBER ME</label>
-    </div>
-    <div>
-      <input type="submit" value="CREATE AN ACCOUNT">
-    </div>
-  </fieldset>
-</form>
+        <div>
+          <p>INTERESTED IN:</p>
+          <p><input type="radio" id="mens" name= "gender" value="mens">
+          <label for="mens">Men's</label></p>
+          <p><input type="radio" id="womens" name="gender" value="womens">
+          <label for="womens">Women's</label></p>
+        </div>
+      </fieldset>
+      <hr class="break">
+      <fieldset name="userLogIn" class="userLogIn">
+        <h2>--SIGN-IN INFORMATION--</h2>
+        <div>
+          <label for="email" class="input_label">EMAIL ADDRESS</label>
+          <input type="email" id="email" name="email" class="textInput" required>
+        </div>
+        <div>
+          <label for="password" class="input_label">PASSWORD</label>
+          <input type="password" id="textInput" name="password" class="textInput" pattern="[0-9a-zA-Z]{8-10}" required>
+        </div>
+        <div>
+          <label for="confPassword" class="input_label">CONFIRM PASSWORD</label>
+          <input type="password" id="textInput" name="confPassword" class="textInput" required>
+        </div>
+        <div>
+          <input type="checkbox" id="remember" checked name="remember" value="yes">
+          <label for="remember">REMEMBER ME</label>
+        </div>
+        <div>
+          <button type="submit">REGISTER</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
