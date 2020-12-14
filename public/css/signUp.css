@@ -1,0 +1,118 @@
+body{
+    /* background-image: url("/site2-sunspel/images/shop_background.jpg");
+    background-attachment: fixed; */
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 1em;
+    background-color: #ffdab933;
+}
+
+#prefix {
+    width: 45%;
+    display: block;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+#prefix:hover {
+    background-color: antiquewhite;
+}
+
+.userChoice {
+    text-align: center;
+    font-size: 12px;
+}
+
+.input_label {
+    font-size: 12px;
+}
+
+.textInput {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    padding-right: 0.25em;
+    border: 2px solid black;
+}
+
+.textInput:hover {
+    background-color: antiquewhite;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#remember{
+    border-radius: 0%;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+.userLogIn {
+    border: none;
+    margin: 0 10%;
+    align-items: center;
+}
+
+.userInfo {
+    border: none;
+    margin: 0 10%;
+    align-items: center;
+}
+
+button {
+    height: 2em;
+    font-size: 2em;
+    width: 100%;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    margin: 0 0 0 0.7em;
+    padding-right: 0.7em;
+}
