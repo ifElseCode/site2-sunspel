@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <% layout('layouts/user-layout')%>
+  
 <body>
   <header></header>
   <main>
     <h1>REGISTER:</h1>
-    <p class="userChoice">Register a new account or <a href="logIn.html">sign in.</a></p>
+    <p class="userChoice">Register a new account or <a href="/login">sign in.</a></p>
     <form action="" method="POST">
       <fieldset name="userInfo" class="userInfo">
         <div>
@@ -52,7 +53,14 @@
         </div>
         <div>
           <label for="password" class="input_label">PASSWORD</label>
-          <input type="password" id="textInput" name="password" class="textInput" pattern="[0-9a-zA-Z]{8-10}" required>
+          <input type="password" id="password" name="password" class="textInput" onkeyup="passwordChecker()" required>
+        </div>
+        
+        <div>
+          <p id="passwordMeter" class="passwordMeter"></p>
+        </div>
+        <div>
+          <span id="passwordWarning"></span>
         </div>
         <div>
           <label for="confPassword" class="input_label">CONFIRM PASSWORD</label>
@@ -68,5 +76,6 @@
       </fieldset>
     </form>
   </main>
+  <script src="/js/signUp.js"></script>
 </body>
 </html>
