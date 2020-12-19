@@ -1,0 +1,59 @@
+/** Utilities */
+.section-title {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 2.25rem;
+	text-align: center;
+	margin: 2.2rem 0;
+}
+
+/* Product Card */
+.product-card {
+	padding: 1.25rem;
+}
+
+.product-card__media {
+	height: 160px;
+	object-fit: contain;
+}
+
+.product-card__content {
+	margin-top: .5rem;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 1.3px;
+}
+
+.product-card__title {
+	margin-bottom: 1rem;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.product-card__media {
+		height: 260px;
+	}
+
+	.product-card__content {
+		font-size: 1.6rem;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+

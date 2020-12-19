@@ -1,0 +1,16 @@
+/** Carousel */
+.carousel__slider {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.carousel__slider a:focus {
+	outline: none;
+}
+
+.carousel__slider i {
+	font-size: 2rem;
+	padding: 1rem;
+	cursor: pointer;
+}
