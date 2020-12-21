@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	font-family: 'Darker Grotesque', sans-serif;
+	font-weight: 300;
+	color: #3C3C3C;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: #3C3C3C;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1080px;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
