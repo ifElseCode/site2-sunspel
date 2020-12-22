@@ -72,6 +72,16 @@ form label.signUp.required:after{
     border: 1px solid black;
 }
 
+.passwordMeter {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    padding-right: 0.25em;
+    border: 2px solid black;
+    height: 2em;
+    background: white;
+}
+
 .textInput:hover {
     background-color: antiquewhite;
 }

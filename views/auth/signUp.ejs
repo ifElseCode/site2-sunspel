@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <% layout('layouts/user-layout')%>
+  <% layout('layouts/user-layout')%>
 <body class="signUp">
   <header></header>
   <main class="signUp">
@@ -52,8 +52,20 @@
           <input type="email" id="email" name="email" class="textInput" required>
         </div>
         <div>
+<<<<<<< HEAD
           <label for="password" class="input_label required signUp">PASSWORD</label>
           <input type="password" id="textInput" name="password" class="textInput" pattern="[0-9a-zA-Z]{8-10}" required>
+=======
+          <label for="password" class="input_label">PASSWORD</label>
+          <input type="password" id="password" name="password" class="textInput" onkeyup="passwordChecker()" required>
+        </div>
+        
+        <div>
+          <p id="passwordMeter" class="passwordMeter"></p>
+        </div>
+        <div>
+          <span id="passwordWarning"></span>
+>>>>>>> master
         </div>
         <div>
           <label for="confPassword" class="input_label required signUp">CONFIRM PASSWORD</label>
@@ -69,5 +81,6 @@
       </fieldset>
     </form>
   </main>
+  <script src="/js/signUp.js"></script>
 </body>
 </html>
