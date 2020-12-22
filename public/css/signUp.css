@@ -1,32 +1,42 @@
-body{
+body.signUp {
     /* background-image: url("/site2-sunspel/images/shop_background.jpg");
     background-attachment: fixed; */
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1.signUp {
     text-align: center;
-    text-decoration: underline;
     font-weight: bold;
-    font-size:xx-large;
+    font-size:x-large;
+    margin-bottom: 1.5em;
 }
 
-h2 {
+h2.signUp {
     text-align: center;
+    margin-bottom: 1.5em;
 }
 
-main {
+main.signUp {
     font-size: 12px;
-    line-height: 1.5em;
+    line-height: 1em;
     padding: 1em;
-    background-color: #ffdab933;
+    background-color: white;
 }
 
+a.signUp {
+    color :black;
+}
+
+form label.signUp.required:after{
+    color:red;
+    content: " *";
+}
 #prefix {
-    width: 45%;
+    width: 20%;
     display: block;
-    border: 2px solid black;
-    padding: 1em;
+    padding: 1em ;
+    margin: 1em 40% 0 19%;
+    
 }
 
 #prefix:hover {
@@ -36,18 +46,30 @@ main {
 .userChoice {
     text-align: center;
     font-size: 12px;
+    margin-bottom: 4em;
+    
+}
+
+.userLogIn {
+    border: none;
+    margin: 0 10%;
+    align-items: center;
 }
 
 .input_label {
     font-size: 12px;
+    margin: 0 19%;
+    text-align: center;
+    
 }
 
 .textInput {
-    width: 100%;
+    width: 60%;
+    margin: .75em auto;
     display: block;
     padding: 1em;
     padding-right: 0.25em;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .textInput:hover {
@@ -93,11 +115,7 @@ input[type='radio']:checked:after {
     vertical-align: middle;
 }
 
-.userLogIn {
-    border: none;
-    margin: 0 10%;
-    align-items: center;
-}
+
 
 .userInfo {
     border: none;
