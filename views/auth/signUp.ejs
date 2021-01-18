@@ -6,11 +6,11 @@
   <header></header>
   <main class="signUp">
     <h1 class= "signUp">REGISTER:</h1>
-    <p class="userChoice">Register a new account or <a href="login" class="signUp">sign in.</a></p>
+    <p class="userChoice signUp">Register a new account or <a href="login" class="signUp">sign in.</a></p>
     <form action="" method="POST" >
       <fieldset name="userInfo" class="userInfo">
         <div>
-          <label for="prefix" class="input_label signUp">PREFIX</label>
+          <label for="prefix" class="inputLabel signUp">PREFIX</label>
           <select name="prefix" id="prefix">
             <option value="" default></option>
             <option value="mr">Mr</option>
@@ -20,63 +20,55 @@
           </select>
         </div>
         <div>
-          <label for="firstName" class="input_label required signUp">FIRST NAME</label>
-          <input type="text" id="firstName" name="firstName" class="textInput" required>
-        </div>
+          <label for="firstName" class="inputLabel required signUp">FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName" class="textInput" required >
+           <!-- TRYING TO ADD A WARNING IF REQ'D NOT FILLED -->
+            <!-- <p class="requiredWarning"></p> -->
+        </div> 
         <div>
-          <label for="lastName" class="input_label required signUp">LAST NAME</label>
+          <label for="lastName" class="inputLabel required signUp">LAST NAME</label>
           <input type="text" id="lastName" name="lastName" class="textInput" required>
         </div>
         <div>
-          <input type="checkbox" id="remember" checked name="remember" value="yes">
-          <label for="remember" >SIGN UP FOR OUR NEWSLETTER</label>
+          <input type="checkbox" id="newsletter" checked name="newsletter" value="yes" class="checkboxInput">
+          <label for="newsletter" class=" checkboxLabel">SIGN UP FOR OUR NEWSLETTER</label>
         </div>
         <div>
-          <label for="dateob">DATE OF BIRTH</label>
-          <input type="date" id="dateob" name="dob">
+          <label for="dateob" class="inputLabel">DATE OF BIRTH</label>
+          <input type="date" id="dateob" name="dob" class="dateInput">
         </div>
 
         <div>
-          <p>INTERESTED IN:</p>
-          <p><input type="radio" id="mens" name= "gender" value="mens">
-          <label for="mens">Men's</label></p>
-          <p><input type="radio" id="womens" name="gender" value="womens">
-          <label for="womens">Women's</label></p>
+          <p id="interested">INTERESTED IN</p>
+          <p><input type="radio" id="mens" name= "gender" value="mens" class="signUp">
+          <label for="mens" class="inputLabel genderSelect">Men's</label></p>
+          <p><input type="radio" id="womens" name="gender" value="womens" class="signUp">
+          <label for="womens" class="inputLabel genderSelect">Women's</label></p>
         </div>
       </fieldset>
-      <hr class="break">
+
       <fieldset name="userLogIn" class="userLogIn">
-        <h2>--SIGN-IN INFORMATION--</h2>
+        <h2 class="signUp">SIGN-IN INFORMATION</h2>
         <div>
-          <label for="email" class="input_label required signUp">EMAIL ADDRESS</label>
+          <label for="email" class="inputLabel required signUp">EMAIL ADDRESS</label>
           <input type="email" id="email" name="email" class="textInput" required>
         </div>
         <div>
-<<<<<<< HEAD
-          <label for="password" class="input_label required signUp">PASSWORD</label>
-          <input type="password" id="textInput" name="password" class="textInput" pattern="[0-9a-zA-Z]{8-10}" required>
-=======
-          <label for="password" class="input_label">PASSWORD</label>
-          <input type="password" id="password" name="password" class="textInput" onkeyup="passwordChecker()" required>
-        </div>
-        
-        <div>
-          <p id="passwordMeter" class="passwordMeter"></p>
+          <label for="password" class="inputLabel required signUp ">PASSWORD</label>
+          <input type="password" id="password" name="password" class="textInput password" onkeyup="passwordChecker()" required>
+          <span id="passwordMeter" class="passwordMeter signUp">Password Strength: No Password</span>
+          <span id="passwordWarning" class="signUp"></span>
         </div>
         <div>
-          <span id="passwordWarning"></span>
->>>>>>> master
-        </div>
-        <div>
-          <label for="confPassword" class="input_label required signUp">CONFIRM PASSWORD</label>
+          <label for="confPassword" class="inputLabel required signUp">CONFIRM PASSWORD</label>
           <input type="password" id="textInput" name="confPassword" class="textInput" required>
         </div>
         <div>
-          <input type="checkbox" id="remember" checked name="remember" value="yes">
-          <label for="remember">REMEMBER ME</label>
+          <input type="checkbox" id="remember" checked name="remember" value="yes" class="checkboxInput">
+          <label for="remember" class="checkboxLabel">REMEMBER ME</label>
         </div>
         <div>
-          <button type="submit">REGISTER</button>
+          <button type="submit" class="signUp" id="submit" onclick="isRequired()">CREATE AN ACCOUNT</button>
         </div>
       </fieldset>
     </form>
