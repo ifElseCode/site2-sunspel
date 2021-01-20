@@ -1,19 +1,7 @@
 body.signUp {
     /* background-image: url("/site2-sunspel/images/shop_background.jpg");
-    background-attachment: fixed; */
-    font-family: 'Lato', sans-serif;
-}
-
-h1.signUp {
-    text-align: center;
-    font-weight: bold;
-    font-size:x-large;
-    margin-bottom: 1.5em;
-}
-
-h2.signUp {
-    text-align: center;
-    margin-bottom: 1.5em;
+    background-attachment: fixed;  */
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 main.signUp {
@@ -23,31 +11,64 @@ main.signUp {
     background-color: white;
 }
 
+main.signUp div {
+    margin-bottom: 2em;
+}
+
+h1.signUp {
+    text-align: center;
+    font-weight: 700;
+    font-size:xx-large;
+    margin-bottom: 1.25em;
+}
+
+h2.signUp {
+    text-align: left;
+    font-weight: 600;
+    font-size:x-large;
+    margin-bottom: 1.25em;
+    margin-left: 20%;
+}
+
+p.signUp{
+    font-size:1.5em;
+    margin-bottom:2em;
+}
+
 a.signUp {
     color :black;
+    text-decoration: underline;
+}
+
+a.signUp:hover {
+    font-weight:bolder;
 }
 
 form label.signUp.required:after{
     color:red;
     content: " *";
 }
+
 #prefix {
-    width: 20%;
+    width: 15%;
     display: block;
-    padding: 1em ;
-    margin: 1em 40% 0 19%;
-    
+    padding: .75em ;
+    margin: 1em 45% 0 20%;
+    border: 1px solid black;
 }
 
-#prefix:hover {
-    background-color: antiquewhite;
+#prefix:focus {
+    /* border-style: double;
+    border: 1px solid black, 2px solid orange; */
+    box-shadow:  0 0 0 2px orange, 0 0 0 3px black;
+    border: none;
+    outline: none !important;
 }
 
 .userChoice {
     text-align: center;
     font-size: 12px;
     margin-bottom: 4em;
-    
 }
 
 .userLogIn {
@@ -56,11 +77,11 @@ form label.signUp.required:after{
     align-items: center;
 }
 
-.input_label {
-    font-size: 12px;
-    margin: 0 19%;
+.inputLabel, .checkboxLabel, #interested {
+    font-size: 14px;
+    margin: 0 20%;
     text-align: center;
-    
+    font-weight: 500;
 }
 
 .textInput {
@@ -70,62 +91,160 @@ form label.signUp.required:after{
     padding: 1em;
     padding-right: 0.25em;
     border: 1px solid black;
+    height: 3em;
 }
 
-.passwordMeter {
-    width: 100%;
+.textInput:focus{
+    outline: 1px solid black !important;
+}
+
+.checkboxInput{
+    /* display:inline; */
+    position: relative;
+    margin-left:20%;
+    -webbkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* vertical-align: -2px; */
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+}
+
+.checkboxInput::before{
+    content: "\2713";
+    position: absolute;
+    font-size: 1.2em;
+    right: 0.1em;
+    visibility: hidden;
+    
+}
+.checkboxInput:checked{
+    background-color:transparent;
+    background-size: 30px;
+    background-position: center;
+    background-image: url(https://img.icons8.com/android/24/000000/checked-2.png);
+
+}
+
+.checkboxInput:focus{
+    box-shadow:  0 0 0 2px orange, 0 0 0 3px black;
+    border: none;
+    outline: none !important;
+}
+
+.checkboxLabel{
+    margin: 0 20% 0 0;
+}
+
+.dateInput{
+    display:block;
+    margin: .75em 0 .75em 20%;
+}
+
+.password{
+    margin-bottom:0;
+    
+}
+.passwordMeter, #passwordWarning {
+    width: 60%;
     display: block;
-    padding: 1em;
-    padding-right: 0.25em;
-    border: 2px solid black;
-    height: 2em;
+    margin: 0 auto;
+    padding: 1em .75em 1em;
+    /* padding-right: 0.25em; */
+    height: 3em;
+    background: #eaebed;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#passwordWarning {
+    font-size: 1.5em;
+    color: red;
     background: white;
+    line-height: 1em;
+    padding-left:0;
+    font-weight: 400;
+}
+.genderSelect{
+    margin-left: 0;
 }
 
-.textInput:hover {
-    background-color: antiquewhite;
-}
-
-div {
-    margin-bottom: 2em;
-}
-
-input[type='radio']:after {
+input[type='radio']{
+    margin-left: 20%;
+    -webbkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 15px;
     height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
+    border-radius: 50%;
+    box-sizing:border-box;
     position: relative;
+    /* background-color: #d1d3d1;
+    border: 2px solid  #d1d3d1; */
+    border: 1px solid #eaebed;
+    box-shadow: inset 0px 0px 0px 3px #fff,
+    inset 0px 0px 0px 30px #eaebed;
+}
+
+/* input[type='radio'].signUp:after{
+    -webbkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #d1d3d1;
     content: '';
-    display: inline-block;
+    width: 7px;
+    height: 7px;
+    padding: auto;
+    border-radius: 50%;
+    display: block;
     visibility: visible;
-    border: 2px solid white;
-}
+    border: 2.5px solid white;
+} */
 
-input[type='radio']:checked:after {
+input[type='radio'].signUp:checked:after {
+    -webbkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 15px;
     height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
+    border-radius: 50%; 
+    box-sizing:border-box;
+    /* top: -2px;
+    left: -1px; */
     position: relative;
-    background-color: black;
+    /* background-color: black; */
     content: '';
-    display: inline-block;
+    display: block;
     visibility: visible;
-    border: 2px solid white;
+    border:1px solid #eaebed;
+    box-shadow: inset 0px 0px 0px 3px #fff,
+    inset 0px 0px 0px 30px #3c3c3c;
 }
 
-#remember{
+input[type='radio'].signUp:focus{
+    box-shadow:  0 0 0 1px orange;
+    animation: box-shadow 3ms 1 ;
+    border: none;
+    outline: none !important;
+}
+
+input[type='radio'].signUp:focus:not(:active){
+    box-shadow:  none;
+    border: none;
+    outline: none !important;
+}
+
+#remember, #newsletter{
     border-radius: 0%;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
 }
 
-
+#interested{
+    text-align:left;
+}
 
 .userInfo {
     border: none;
@@ -133,14 +252,15 @@ input[type='radio']:checked:after {
     align-items: center;
 }
 
-button {
-    height: 2em;
-    font-size: 2em;
-    width: 100%;
-    /* font-family: 'Lato', sans-serif; */
-    font-weight: 700;
+button.signUp {
+    min-height: 3em;
+    font-size: 1.25em;
+    line-height:2em;
+    padding: auto;
+    width: 60%;
+    font-weight: 500;
     color: white;
     background-color: black;
-    margin: 0 0 0 0.7em;
-    padding-right: 0.7em;
+    margin: 0.75em auto;
+    display:block;
 }
